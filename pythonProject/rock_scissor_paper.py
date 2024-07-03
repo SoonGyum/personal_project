@@ -14,14 +14,14 @@ def rock_scissor_paper():
 
         print(f'플레이어: {player_choice}, 컴퓨터: {dealer_choice}')
 
-        if (player_choice == '가위', dealer_choice =='보') or \
-                (player_choice == '바위', dealer_choice =='가위') or \
-                (player_choice == '보', dealer_choice =='바위'):
+        if (player_choice == '가위' and dealer_choice =='보') or \
+                (player_choice == '바위' and dealer_choice =='가위') or \
+                (player_choice == '보' and dealer_choice =='바위'):
             score['승'] += 1
             print(f"이겼습니다! 전적 = {score}")
-        elif (player_choice == '가위', dealer_choice =='바위') or \
-                (player_choice == '바위', dealer_choice =='보') or \
-                (player_choice == '보', dealer_choice =='가위'):
+        elif (player_choice == '가위' and dealer_choice =='바위') or \
+                (player_choice == '바위' and dealer_choice =='보') or \
+                (player_choice == '보' and dealer_choice =='가위'):
             print(f"졌습니다! 전적 = {score}")
             score['패'] += 1
         elif player_choice == dealer_choice:
