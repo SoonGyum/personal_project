@@ -21,7 +21,7 @@ def up_down(target_num, guess_num, trial_num):
             trial_num += 1
             print(f'정답입니다! 시도({trial_num}회)')
             while True:
-                retry = input("다시 시작하겠습니까? (Y/N").lower()
+                retry = input("다시 시작하겠습니까? (Y/N)").lower()
                 if retry == 'y':
                     trial_num = 0
                     break
